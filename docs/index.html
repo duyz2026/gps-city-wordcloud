@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GPS 定城市匹配和频率词云 · 十年前那只表记了 387 次</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAHSUlEQVR4nKxXCVBU5x3/vWOPt7vcusgtl8ghFjUEFZAxHrWGTsdO2kwa02Q6Ucd02tIETR3T0pZxJDGGdJI2cTrG2mmbJmNinLFHKsohHuOByh0QFpZDcIEF2d23+/a91+89hIHI4sLkN7Pz5jv+///v+3//41sW80RJAVg99DmUxMRRQIQyJwP9lCxZlta4rvwAEOejj/J341u53JOsXlMkyXg6MFjvDQnlmOBgTgdZhn3ExQ8POeWxMQ9D09IXkiCVv1blvOaP3scSKMvXpmq13ElGQ6duKUzlouND6O5RHe70sai/pyX2JWSaeaQvciDO4ESXZUQ8X2F1i6J4W+CFl/bXulsXTOBwPreOZdmKzFWRurzNSdSpxgCcuBWOAYcWqUsXY3lykrqv5as2NFvuI9zA48VlnSiMHUBNbb/c0j7mlAXvU8UXXVfnTaCsgMthKKZm43dS2BVZEfjRJ1FgQ1JQWrwXGpaZVUbwijhw6F1gpAV/zq9DfZMdtddtHlkQ832RmJXAO3mGCFmradv89DJjbLIZW/+Wil3P7cDmvCfgD/5TeQUf/eMUTm84B6tlFFXXR+wij5TiS+ODX9/LzqaANmjPrlgZbkxZHoaCvyTiN6/uQUZyHPzFtwtyEG42Y8dRHmfz/4f7Nn1Qczf/GVnKfSyBsnzDdwEpfW1uNI5cDENOdvYM49aBIXz0eRUqrjZgwDY6QZimELEoBNvyVmL3M5sQYNQjKy0Bq5/IwXstFuxa3ki1drlWH95g2PZ6lfPf0+09cpmFy7i/rs+LjbUhGB9bs/A7cnoFMkm3L85fx97fH8fNpk44nO4pGbKEBw4XbjZbcOFqIzasSUWgicO6NZk49mU70jQdCNd7mHvDYuyXFs+J6fbo6YOjaxHq9oirkxIDUWEJRnR8+tTa9cZOlB77HA6XG3Oh3TqAk2eqVcIKYpIzUTlgRnykhhIlOVex4ZOAR2v4/pJwo1tHLuaOLQRpidHqPO8RVKXjD0+tuHzPDzfhxieH0HzmCD4rL0JCtBnmsCCkExmtVjO1Ny0xBg3OaDAUhRATM+ZlDTum25wRA5RMrwo36zlJ8KLBpsNP4iPVefuoA80dvVP71melYA+5a71O89BINP71p/2YDakJUTg2FgiJlNCwQEY3/EDK8klAw8Ks01CQBAGhJj3io8zqvG30AcbGXVP70ojSSeOvl3+M0xUzq26gkcPx0t3ISIpRPRNCdAleGToNzdGU7PsKJrwgAV4veJcDjXd7MBuc/NxxMB0N7Vaiy6l2LBDdDCWzvgmIaLHb3SqBjMChKbcvCgpQo3oSlj4beLcAf9B0txep3CBEUcIDpwRJppt8EhBkuWnI7nErV7DC2I/mr+6q88FBRiTFLpnaV1vXig8+Padey+FfPItbpw7j7eLnwem1jxBobG1HiraPxAAw6pB4CXLL9PWZhUiW2mwjgsYx7sHzcR1440wd3njlOehJVO8szMPl221wk4xQAuqDf55Tf7OBYWiQvgwPCeazNbdxYE0HuTYJoy5JS1zQ6tMDLsZ1k8gONnW4VMYfrr6MV379jrq27lvJ2PdSIXRaDeaCEnRH9+3EcpJBew+W483EKtX9Hf0CSPb2Omuct2aQnT6otEB6KlZjHx4Tt6fFael4owO1PXo0DrF4cmUKMpfFYuv6THIaAbaRMfL1qHJG8i7JSI7Bqz/ejgMvf49kz2KUnzgNquM8ng2rJwRk3Oj0eAmPooNdwgwCj3RD5clloozW1FjdklXJnFpmSztzwUfm47ev7YI/OPjmh+CslfjpokpVvrHbI1tHRKvjgiO+hDQanx6Y9MKmGPbKfbv0YqiJpox6GrlB3ejr68fe4w1IJ7mt0WhhMuhnyA0MjaKhtRPP/LwMW8T/YmfoDdV4/7CAtnsiuVF5y0GL0Pt1ez4fJG/nG18g9I5vXWNkjHpGzeNBXof3SIO6aI+ClyKvooSJStl0t49EswfrA3uwe/E1BLG8anycBN7lNo9IzvxCcbXj77PZmfNJdmSD4X0NS7+cv4LTmDhaJaFkgCJmc2vQ4ggliSMhxWBHEMNPrSs77A4RdV2CR/Tij8R4kS8bcxIgiqh3NwYc8srSvuxkPW0OYtSTKZ1OniSjfB+OZWniOzgqor7HS2qOXFp8wVlCTdTB+ROYxPsbDYW8TH+aHMHqEsJZVWzSuHK708cdgwK6hiSekajtRdXj5x+n2+//BUfXclEUx1Sbg+ilGdEsLRNRpW0o3lA8oBBo6RMl27jcAV4s+OVlV68/ev0moOCtTBjZMNOlEBOdnh6t1LuJkyu/hl6vaHfKzdKwI6f4Dhz+6pwXAQV/SIJOijNVkg6bnRHB0srp63u9kpPHDabHkfezdvjfKhdCQEFJGrQBZmN3ZDAdrpy+f0zuGR90JJY0wTNfXQsioKAsj8umGfqSkgCiLGf/qtpZhwWAwQJxrtvbu20pS2o1dW1/tfMkFogFe+Cbwv8BAAD//zQYek4AAAAGSURBVAMAR/k7nbi4Q3QAAAAASUVORK5CYII=">
+<style>
+  *{box-sizing:border-box}
+  :root{--bg:#0b0f14;--panel:#111820;--line:#1e2a36;--txt:#e8eef5;--dim:#8b9bad;
+        --warm:#ff8a5c;--warm2:#ffd166;--cyan:#5eead4;--violet:#a5b4fc}
+  html,body{margin:0;background:var(--bg);color:var(--txt);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:44px 28px 80px}
+  .brand{display:flex;align-items:center;gap:14px;margin:0 0 30px;padding-bottom:22px;
+    border-bottom:1px solid var(--line)}
+  .brand i{display:block;width:46px;height:46px;flex:0 0 46px;
+    background:url("data:image/png;base64,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") center/contain no-repeat}
+  .brand b{display:block;font-size:15.5px;letter-spacing:.5px;color:#dde8f3;font-weight:700}
+  .brand em{display:block;font-style:normal;font-size:11.5px;color:#6b7d91;
+    margin-top:4px;line-height:1.6}
+  .brand em s{color:#8fa3b8;text-decoration:none}
+  .kicker{font-size:12px;letter-spacing:.2em;color:var(--warm);margin:0 0 18px;
+    font-variant-numeric:tabular-nums}
+  h1{font-size:44px;line-height:1.2;margin:0 0 18px;letter-spacing:-.5px;font-weight:800}
+  h1 em{font-style:normal;color:var(--warm)}
+  .sub{font-size:16px;line-height:1.8;color:var(--dim);margin:0;max-width:680px}
+  .sub b{color:#cfdae6;font-weight:600}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);
+    margin:38px 0 12px;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .stat{background:var(--panel);padding:22px 20px}
+  .stat b{display:block;font-size:32px;font-weight:800;letter-spacing:-1px;
+    font-variant-numeric:tabular-nums}
+  .stat b i{font-style:normal;font-size:15px;color:var(--dim);margin-left:4px;font-weight:500}
+  .stat span{display:block;font-size:12.5px;color:var(--dim);margin-top:6px}
+  .stat.hl b{color:var(--warm)}
+  .hint{font-size:12.5px;color:#5f7085;margin:0 0 46px;line-height:1.7}
+  h2{font-size:13px;letter-spacing:.2em;color:var(--dim);font-weight:600;margin:0 0 8px}
+  .lead{font-size:13.5px;color:#7c8ea3;margin:0 0 20px;line-height:1.7}
+  section{margin-bottom:56px}
+  /* 词云 */
+  .cloud{display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;
+    gap:4px 20px;line-height:1.15;padding:34px 26px;background:var(--panel);
+    border:1px solid var(--line);border-radius:16px}
+  .cloud b{font-weight:700;white-space:nowrap;transition:.2s;cursor:default}
+  .cloud b:hover{filter:brightness(1.35)}
+  .w-city{color:var(--warm2)}
+  .w-year{color:var(--cyan);font-variant-numeric:tabular-nums}
+  .w-seg{color:var(--violet)}
+  .legend{display:flex;gap:20px;margin-top:14px;font-size:12px;color:#5f7085;flex-wrap:wrap}
+  .legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
+  /* 24 小时 */
+  .hours{display:flex;align-items:flex-end;gap:3px;height:132px;padding:16px 18px 0;
+    background:var(--panel);border:1px solid var(--line);border-radius:14px 14px 0 0;border-bottom:0}
+  .hours i{flex:1;background:#243343;border-radius:3px 3px 0 0;display:block;
+    transition:.2s;min-height:2px}
+  .hours i:hover{background:#31465c}
+  .hours i.late{background:linear-gradient(180deg,#ffd166,#ff8a5c)}
+  .haxis{display:flex;gap:3px;padding:8px 18px 0;margin-bottom:26px;
+    border:1px solid var(--line);border-top:0;border-radius:0 0 14px 14px;background:var(--panel)}
+  .haxis span{flex:1;font-size:10.5px;color:#5f7085;text-align:left;
+    font-variant-numeric:tabular-nums}
+  /* 城市榜 */
+  .topnote{margin:0 0 18px;padding:13px 16px;border-left:3px solid var(--warm);
+    background:#141c25;border-radius:0 8px 8px 0;font-size:13.5px;line-height:1.85;color:#a9b8c8}
+  .topnote b{color:var(--warm2);font-variant-numeric:tabular-nums;font-weight:700}
+  ul.city{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+  ul.city li{display:grid;grid-template-columns:78px 1fr 52px 68px 52px;align-items:center;gap:14px}
+  .cn{font-size:14.5px;color:#cfdae6}
+  .bar{height:10px;background:#182029;border-radius:5px;overflow:hidden}
+  .bar i{display:block;height:100%;border-radius:5px;min-width:3px;
+    background:linear-gradient(90deg,#c05a34,#ff8a5c 55%,#ffd166)}
+  .num{text-align:right;font-size:14px;font-variant-numeric:tabular-nums;color:#dfe9f3}
+  .pct{text-align:right;font-size:12px;color:var(--dim);font-variant-numeric:tabular-nums}
+  .yr{text-align:right;font-size:11.5px;color:#4d5c6e;font-variant-numeric:tabular-nums}
+  /* 热力 */
+  table.heat{border-collapse:separate;border-spacing:3px;width:100%;margin-top:8px;
+    font-variant-numeric:tabular-nums}
+  .heat th{font-size:11px;color:#5f7085;font-weight:500;padding:2px 0;text-align:center}
+  .heat th.yr{text-align:right;padding-right:10px;font-size:12px;color:#8b9bad;width:52px}
+  .heat th.sum{width:46px}
+  .heat td{height:30px;border-radius:4px;text-align:center;font-size:10.5px;color:#0d0a08;
+    font-weight:600;background:#151d26}
+  .heat td.z{background:#131a22}
+  .heat td.sum{background:transparent!important;color:#7c8ea3;font-size:11.5px;text-align:right;
+    padding-right:6px}
+  /* 年表 */
+  ul.years{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+  ul.years li{display:grid;grid-template-columns:64px 66px 1fr;align-items:center;gap:14px;
+    background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+  ul.years b{font-size:19px;font-variant-numeric:tabular-nums;color:var(--warm2)}
+  .cnt{font-size:12px;color:var(--dim)}
+  .tags{display:flex;flex-wrap:wrap;gap:7px}
+  .tag{background:#1a2530;border-radius:6px;padding:3px 9px;font-size:12.5px;color:#c8d6e4}
+  .tag em{font-style:normal;color:#6f8499;margin-left:5px;font-size:11px}
+  .more{font-size:11.5px;color:#5f7085;align-self:center}
+  /* 验证 */
+  .verify{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);
+    border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:22px}
+  .verify div{background:var(--panel);padding:18px 16px}
+  .verify b{display:block;font-size:24px;font-weight:800;font-variant-numeric:tabular-nums}
+  .verify span{display:block;font-size:12px;color:var(--dim);margin-top:5px;line-height:1.5}
+  ol.steps{margin:0;padding-left:0;list-style:none;counter-reset:s}
+  ol.steps li{counter-increment:s;position:relative;padding:0 0 18px 42px;font-size:13.5px;
+    line-height:1.85;color:#a5b6c7}
+  ol.steps li::before{content:counter(s);position:absolute;left:0;top:2px;width:24px;height:24px;
+    border-radius:50%;background:#1a2530;color:var(--warm2);font-size:12px;font-weight:700;
+    display:flex;align-items:center;justify-content:center}
+  ol.steps b{color:#e8eef5}
+  .note{background:#121a22;border-left:3px solid var(--warm);border-radius:0 10px 10px 0;
+    padding:16px 20px;font-size:13px;line-height:1.9;color:#a5b6c7;margin-top:22px}
+  .note b{color:#e8eef5}
+  footer{border-top:1px solid var(--line);padding-top:24px;font-size:12.5px;color:#5f7085;
+    display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;line-height:1.9}
+  @media(max-width:760px){
+    .wrap{padding:28px 18px 60px} h1{font-size:29px}
+    .stats{grid-template-columns:repeat(2,1fr)} .verify{grid-template-columns:repeat(2,1fr)}
+    ul.city li{grid-template-columns:64px 1fr 46px;gap:10px} .pct,.yr{display:none}
+    .heat td{height:22px;font-size:9px}
+    ul.years li{grid-template-columns:1fr;gap:8px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand">
+    <i></i>
+    <div>
+      <b>GPS 定城市匹配和频率词云</b>
+      <em>把坐标定成城市，把次数看成词云　·　地名反查需外接地图服务，本文以腾讯地图为例（Key 需自行申请）</em>
+    </div>
+  </div>
+
+  <p class="kicker">2014.09.22 — 2017.08.20 ｜ GARMIN fēnix 2</p>
+  <h1>十年前那只表，记了 <em>387</em> 次<br>我早忘了的跑步</h1>
+  <p class="sub">那三年它一直戴在手上，跑完就按一下。现在导出数据我才发现：
+    <b>387 条记录，其中 373 次跑步，地名那一栏全是空的</b>。它只记了时间、坐标、距离——至于那天在哪个城市，它不知道。</p>
+
+  <div class="stats">
+    <div class="stat"><b>387<i>次</i></b><span>2014.09 — 2017.08</span></div>
+    <div class="stat"><b>2,019<i>公里</i></b><span>其中跑步 1,932</span></div>
+    <div class="stat"><b>19<i>个地方</i></b><span>全部靠坐标反查出来</span></div>
+    <div class="stat hl"><b>227<i>次</i></b><span>在天黑以后</span></div>
+  </div>
+  <p class="hint">数据是十年前的老表导出的。下面每个数字都能追到原始 CSV；补地名用了什么办法、怎么验的，写在最后。</p>
+
+  <section>
+    <h2>那三年的全部线索</h2>
+    <p class="lead">把 387 条记录拆成词，字号＝次数。这些词加起来，就是那三年我能想起来的全部。</p>
+    <div class="cloud"><b class="w-city" style="font-size:17.5px;opacity:0.51" title="1 次">济南</b> <b class="w-city" style="font-size:17.5px;opacity:0.51" title="1 次">成都</b> <b class="w-city" style="font-size:19.0px;opacity:0.53" title="2 次">三亚</b> <b class="w-year" style="font-size:42.1px;opacity:0.83" title="85 次">2017</b> <b class="w-year" style="font-size:47.7px;opacity:0.90" title="129 次">2016</b> <b class="w-city" style="font-size:26.2px;opacity:0.63" title="13 次">长沙</b> <b class="w-city" style="font-size:32.1px;opacity:0.71" title="31 次">重庆</b> <b class="w-city" style="font-size:17.5px;opacity:0.51" title="1 次">恩施</b> <b class="w-city" style="font-size:19.0px;opacity:0.53" title="2 次">郑州</b> <b class="w-city" style="font-size:17.5px;opacity:0.51" title="1 次">厦门</b> <b class="w-city" style="font-size:19.0px;opacity:0.53" title="2 次">合肥</b> <b class="w-seg" style="font-size:45.3px;opacity:0.87" title="109 次">清晨</b> <b class="w-year" style="font-size:36.3px;opacity:0.76" title="50 次">2014</b> <b class="w-seg" style="font-size:20.2px;opacity:0.55" title="3 次">中午</b> <b class="w-city" style="font-size:17.5px;opacity:0.51" title="1 次">上海</b> <b class="w-seg" style="font-size:27.1px;opacity:0.64" title="15 次">上午</b> <b class="w-city" style="font-size:33.1px;opacity:0.72" title="35 次">十堰</b> <b class="w-city" style="font-size:17.5px;opacity:0.51" title="1 次">昆明</b> <b class="w-city" style="font-size:32.3px;opacity:0.71" title="32 次">杭州</b> <b class="w-city" style="font-size:17.5px;opacity:0.51" title="1 次">南京</b> <b class="w-seg" style="font-size:25.8px;opacity:0.63" title="12 次">下午</b> <b class="w-city" style="font-size:32.1px;opacity:0.71" title="31 次">武汉</b> <b class="w-seg" style="font-size:29.2px;opacity:0.67" title="21 次">傍晚</b> <b class="w-city" style="font-size:23.2px;opacity:0.59" title="7 次">襄阳</b> <b class="w-city" style="font-size:20.2px;opacity:0.55" title="3 次">南昌</b> <b class="w-seg" style="font-size:57.0px;opacity:1.00" title="227 次">夜里</b> <b class="w-city" style="font-size:52.1px;opacity:0.95" title="171 次">宜昌</b> <b class="w-city" style="font-size:32.3px;opacity:0.71" title="32 次">深圳</b> <b class="w-year" style="font-size:47.0px;opacity:0.89" title="123 次">2015</b></div>
+    <div class="legend">
+      <span><i style="background:#ffd166"></i>城市</span>
+      <span><i style="background:#5eead4"></i>年份</span>
+      <span><i style="background:#a5b4fc"></i>开跑时段</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>一天里，几点出门</h2>
+    <p class="lead">387 次按开跑钟点排开。早上 7 点一拨，晚上 21 点到 22 点一拨，中间整个白天基本是空的。</p>
+    <div class="hours"><i class="" style="height:1.5%" title="00 点 · 0 次"></i><i class="" style="height:1.5%" title="01 点 · 0 次"></i><i class="" style="height:1.5%" title="02 点 · 0 次"></i><i class="" style="height:1.5%" title="03 点 · 0 次"></i><i class="" style="height:1.5%" title="04 点 · 0 次"></i><i class="" style="height:1.5%" title="05 点 · 0 次"></i><i class="" style="height:15.7%" title="06 点 · 7 次"></i><i class="" style="height:74.3%" title="07 点 · 77 次"></i><i class="" style="height:34.7%" title="08 点 · 25 次"></i><i class="" style="height:18.2%" title="09 点 · 9 次"></i><i class="" style="height:9.9%" title="10 点 · 3 次"></i><i class="" style="height:9.9%" title="11 点 · 3 次"></i><i class="" style="height:6.1%" title="12 点 · 1 次"></i><i class="" style="height:8.1%" title="13 点 · 2 次"></i><i class="" style="height:13.0%" title="14 点 · 5 次"></i><i class="" style="height:1.5%" title="15 点 · 0 次"></i><i class="" style="height:8.1%" title="16 点 · 2 次"></i><i class="" style="height:13.0%" title="17 点 · 5 次"></i><i class="" style="height:6.1%" title="18 点 · 1 次"></i><i class="" style="height:17.0%" title="19 点 · 8 次"></i><i class="" style="height:21.7%" title="20 点 · 12 次"></i><i class="late" style="height:82.8%" title="21 点 · 90 次"></i><i class="late" style="height:100.0%" title="22 点 · 118 次"></i><i class="late" style="height:29.0%" title="23 点 · 19 次"></i></div><div class="haxis"><span>0</span><span></span><span></span><span></span><span></span><span></span><span>6</span><span></span><span></span><span></span><span></span><span></span><span>12</span><span></span><span></span><span></span><span></span><span></span><span>18</span><span></span><span></span><span></span><span></span><span>23</span></div>
+    <div class="note"><b>这里用的是本地时间。</b>手表对同一次跑步存了两份时间：一份本地、一份 UTC，差 8 小时。
+      页面一律按本地时间读。<br>反过来算了一遍：如果按 UTC 读，这 227 次「21 点后」会整体前移 8 小时，全部落到下午 13—14 点（UTC 口径下 12—13 点有 104 次，本地口径只有 3 次）。上班和午休的点，比夜里十点出门别扭得多。所以按本地时间读——这条和你的记忆也对得上。
+      <br>原始记录一个字没改，只是读的时候选对了字段。</div>
+  </section>
+
+  <section>
+    <h2>这 19 个地方</h2>
+    <p class="lead">中间是次数，右边是距离，最右边是第一次去的那年。</p>
+    <p class="topnote"><b>宜昌 171 次、866 公里</b>，占全部 387 条记录的 44%，是第二名（十堰 35 次）的 4.9 倍。它一个人就能占满整根横轴，画进图里其余 18 个地方全被压成一样的短线，所以这里只用一行字说它。下面的条形只排其余 18 个，比例按它们中间的第一名算满格。</p>
+    <ul class="city">
+<li><span class="cn">十堰</span><span class="bar"><i style="width:100.0%"></i></span><span class="num">35</span><span class="pct">197 km</span><span class="yr">2014</span></li>
+<li><span class="cn">杭州</span><span class="bar"><i style="width:91.4%"></i></span><span class="num">32</span><span class="pct">190 km</span><span class="yr">2015</span></li>
+<li><span class="cn">深圳</span><span class="bar"><i style="width:91.4%"></i></span><span class="num">32</span><span class="pct">177 km</span><span class="yr">2015</span></li>
+<li><span class="cn">武汉</span><span class="bar"><i style="width:88.6%"></i></span><span class="num">31</span><span class="pct">159 km</span><span class="yr">2014</span></li>
+<li><span class="cn">重庆</span><span class="bar"><i style="width:88.6%"></i></span><span class="num">31</span><span class="pct">140 km</span><span class="yr">2016</span></li>
+<li><span class="cn">长沙</span><span class="bar"><i style="width:37.1%"></i></span><span class="num">13</span><span class="pct">78 km</span><span class="yr">2016</span></li>
+<li><span class="cn">襄阳</span><span class="bar"><i style="width:20.0%"></i></span><span class="num">7</span><span class="pct">33 km</span><span class="yr">2014</span></li>
+<li><span class="cn">南昌</span><span class="bar"><i style="width:8.6%"></i></span><span class="num">3</span><span class="pct">10 km</span><span class="yr">2016</span></li>
+<li><span class="cn">合肥</span><span class="bar"><i style="width:5.7%"></i></span><span class="num">2</span><span class="pct">12 km</span><span class="yr">2016</span></li>
+<li><span class="cn">三亚</span><span class="bar"><i style="width:5.7%"></i></span><span class="num">2</span><span class="pct">13 km</span><span class="yr">2017</span></li>
+<li><span class="cn">郑州</span><span class="bar"><i style="width:5.7%"></i></span><span class="num">2</span><span class="pct">13 km</span><span class="yr">2017</span></li>
+<li><span class="cn">恩施</span><span class="bar"><i style="width:2.9%"></i></span><span class="num">1</span><span class="pct">1 km</span><span class="yr">2015</span></li>
+<li><span class="cn">昆明</span><span class="bar"><i style="width:2.9%"></i></span><span class="num">1</span><span class="pct">5 km</span><span class="yr">2016</span></li>
+<li><span class="cn">成都</span><span class="bar"><i style="width:2.9%"></i></span><span class="num">1</span><span class="pct">8 km</span><span class="yr">2016</span></li>
+<li><span class="cn">厦门</span><span class="bar"><i style="width:2.9%"></i></span><span class="num">1</span><span class="pct">5 km</span><span class="yr">2016</span></li>
+<li><span class="cn">上海</span><span class="bar"><i style="width:2.9%"></i></span><span class="num">1</span><span class="pct">6 km</span><span class="yr">2017</span></li>
+<li><span class="cn">南京</span><span class="bar"><i style="width:2.9%"></i></span><span class="num">1</span><span class="pct">10 km</span><span class="yr">2017</span></li>
+<li><span class="cn">济南</span><span class="bar"><i style="width:2.9%"></i></span><span class="num">1</span><span class="pct">7 km</span><span class="yr">2017</span></li>
+    </ul>
+    <div class="note">十堰 35 次、杭州 32 次、深圳 32 次、武汉 31 次——这几段现在想起来还是断的。
+      但表上写得很清楚：那几年我确实在那些地方跑过。</div>
+  </section>
+
+  <section>
+    <h2>那三年 · 一年一年看</h2>
+    <p class="lead">标签上的数字是<b>当年</b>跑的次，不是累计。</p>
+    <ul class="years">
+<li><b>2014</b><span class="cnt">50 次</span><span class="tags"><span class="tag">十堰<em>34</em></span><span class="tag">宜昌<em>7</em></span><span class="tag">襄阳<em>5</em></span><span class="tag">武汉<em>1</em></span></span></li>
+<li><b>2015</b><span class="cnt">123 次</span><span class="tags"><span class="tag">宜昌<em>62</em></span><span class="tag">杭州<em>30</em></span><span class="tag">深圳<em>21</em></span><span class="tag">襄阳<em>1</em></span><span class="tag">恩施<em>1</em></span><span class="tag">十堰<em>1</em></span></span></li>
+<li><b>2016</b><span class="cnt">129 次</span><span class="tags"><span class="tag">宜昌<em>58</em></span><span class="tag">武汉<em>20</em></span><span class="tag">重庆<em>18</em></span><span class="tag">深圳<em>11</em></span><span class="tag">长沙<em>10</em></span><span class="tag">合肥<em>2</em></span><span class="tag">南昌<em>2</em></span><span class="tag">昆明<em>1</em></span><span class="more">等 10 个地方</span></span></li>
+<li><b>2017</b><span class="cnt">85 次</span><span class="tags"><span class="tag">宜昌<em>44</em></span><span class="tag">重庆<em>13</em></span><span class="tag">武汉<em>10</em></span><span class="tag">长沙<em>3</em></span><span class="tag">三亚<em>2</em></span><span class="tag">杭州<em>2</em></span><span class="tag">郑州<em>2</em></span><span class="tag">襄阳<em>1</em></span><span class="more">等 12 个地方</span></span></li>
+    </ul>
+    <h2 style="margin-top:34px">那三年 · 逐月</h2>
+    <p class="lead">2016 年最密。2017 年 8 月之后，这只表就没再出现过。</p>
+<table class='heat'><thead><tr><th></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th class='sum'>合计</th></tr></thead><tbody><tr><th class='yr'>2014</th><td class="z" title="2014年1月 · 0 次"></td><td class="z" title="2014年2月 · 0 次"></td><td class="z" title="2014年3月 · 0 次"></td><td class="z" title="2014年4月 · 0 次"></td><td class="z" title="2014年5月 · 0 次"></td><td class="z" title="2014年6月 · 0 次"></td><td class="z" title="2014年7月 · 0 次"></td><td class="z" title="2014年8月 · 0 次"></td><td class="h" style="background:rgba(255,138,92,0.526)" title="2014年9月 · 5 次">5</td><td class="h" style="background:rgba(255,138,92,1.000)" title="2014年10月 · 20 次">20</td><td class="h" style="background:rgba(255,138,92,0.747)" title="2014年11月 · 11 次">11</td><td class="h" style="background:rgba(255,138,92,0.838)" title="2014年12月 · 14 次">14</td><td class='sum'>50</td></tr>
+<tr><th class='yr'>2015</th><td class="h" style="background:rgba(255,138,92,0.747)" title="2015年1月 · 11 次">11</td><td class="h" style="background:rgba(255,138,92,0.607)" title="2015年2月 · 7 次">7</td><td class="h" style="background:rgba(255,138,92,0.680)" title="2015年3月 · 9 次">9</td><td class="h" style="background:rgba(255,138,92,0.895)" title="2015年4月 · 16 次">16</td><td class="h" style="background:rgba(255,138,92,0.867)" title="2015年5月 · 15 次">15</td><td class="h" style="background:rgba(255,138,92,0.607)" title="2015年6月 · 7 次">7</td><td class="h" style="background:rgba(255,138,92,0.778)" title="2015年7月 · 12 次">12</td><td class="h" style="background:rgba(255,138,92,0.838)" title="2015年8月 · 14 次">14</td><td class="h" style="background:rgba(255,138,92,0.680)" title="2015年9月 · 9 次">9</td><td class="h" style="background:rgba(255,138,92,0.747)" title="2015年10月 · 11 次">11</td><td class="h" style="background:rgba(255,138,92,0.645)" title="2015年11月 · 8 次">8</td><td class="h" style="background:rgba(255,138,92,0.480)" title="2015年12月 · 4 次">4</td><td class='sum'>123</td></tr>
+<tr><th class='yr'>2016</th><td class="h" style="background:rgba(255,138,92,0.568)" title="2016年1月 · 6 次">6</td><td class="h" style="background:rgba(255,138,92,0.607)" title="2016年2月 · 7 次">7</td><td class="h" style="background:rgba(255,138,92,0.895)" title="2016年3月 · 16 次">16</td><td class="h" style="background:rgba(255,138,92,0.838)" title="2016年4月 · 14 次">14</td><td class="h" style="background:rgba(255,138,92,0.778)" title="2016年5月 · 12 次">12</td><td class="h" style="background:rgba(255,138,92,0.838)" title="2016年6月 · 14 次">14</td><td class="h" style="background:rgba(255,138,92,0.714)" title="2016年7月 · 10 次">10</td><td class="h" style="background:rgba(255,138,92,0.747)" title="2016年8月 · 11 次">11</td><td class="h" style="background:rgba(255,138,92,0.809)" title="2016年9月 · 13 次">13</td><td class="h" style="background:rgba(255,138,92,0.680)" title="2016年10月 · 9 次">9</td><td class="h" style="background:rgba(255,138,92,0.645)" title="2016年11月 · 8 次">8</td><td class="h" style="background:rgba(255,138,92,0.680)" title="2016年12月 · 9 次">9</td><td class='sum'>129</td></tr>
+<tr><th class='yr'>2017</th><td class="h" style="background:rgba(255,138,92,0.778)" title="2017年1月 · 12 次">12</td><td class="h" style="background:rgba(255,138,92,0.680)" title="2017年2月 · 9 次">9</td><td class="h" style="background:rgba(255,138,92,0.895)" title="2017年3月 · 16 次">16</td><td class="h" style="background:rgba(255,138,92,0.838)" title="2017年4月 · 14 次">14</td><td class="h" style="background:rgba(255,138,92,0.975)" title="2017年5月 · 19 次">19</td><td class="h" style="background:rgba(255,138,92,0.778)" title="2017年6月 · 12 次">12</td><td class="h" style="background:rgba(255,138,92,0.299)" title="2017年7月 · 1 次">1</td><td class="h" style="background:rgba(255,138,92,0.371)" title="2017年8月 · 2 次">2</td><td class="z" title="2017年9月 · 0 次"></td><td class="z" title="2017年10月 · 0 次"></td><td class="z" title="2017年11月 · 0 次"></td><td class="z" title="2017年12月 · 0 次"></td><td class='sum'>85</td></tr></tbody></table>
+  </section>
+
+  <section>
+    <h2>地名是怎么补出来的</h2>
+    <p class="lead">这 387 条里，有坐标的 373 条，没坐标的 14 条。补名字不是猜，是查。</p>
+    <div class="verify">
+      <div><b>1,524</b><span>拿来当「标准答案」的记录</span></div>
+      <div><b>99.54%</b><span>引擎判对了 1,517 条</span></div>
+      <div><b>368</b><span>飞2 这 387 条里补出地名</span></div>
+      <div><b>19</b><span>判不了，就没写</span></div>
+    </div>
+    <ol class="steps">
+      <li><b>先确认这套办法可靠。</b>后来的飞3 HR、飞5X 记了 1,524 条既有地名、又有坐标的记录。
+        把坐标丢给反查引擎，看它判的城市和手表写的地名对不对得上：<b>1,517 条对，7 条不对，准确率 99.54%</b>。</li>
+      <li><b>7 条不对的都是什么。</b>3 条引擎直接判「不知道」（坐标离城市中心超过 25 公里，判 D 级，不硬猜）；
+        其余是「北京市」这类带「市」字的写法差异。这些记录本身有原始地名，落库时用原值，不受影响。</li>
+      <li><b>定一条线：低于 99% 就不落库。</b>这条规矩写在脚本里，跑不过就整个中止，一个字段都不写。</li>
+      <li><b>再拿这套办法去补飞2。</b>373 条有坐标的按 200 米归成跑点簇，每个簇取中心点问一次，
+        补出 368 条地名；<b>剩下 19 条判不了，就留空，没有硬塞一个城市</b>。</li>
+    </ol>
+    <div class="note"><b>为什么要用后来的数据验。</b>飞2 那 387 条本来一条地名都没有，
+      自己没法验自己。必须拿「既有地名又有坐标」的记录当标尺——这也是我一开始不敢直接用的原因。</div>
+  </section>
+
+  <section>
+    <h2>几件只能你来点头的事</h2>
+    <p class="lead">能自证的都核过了。下面这几条数据说不清，我也没替你改，留在这里等你确认。</p>
+    <ol class="steps">
+      <li><b>2017 年 8 月 21 日到 11 月 17 日，三个月零一条记录。</b>不是飞2 停了记录——这段时间全库都是空的。
+        下一块表（飞3 HR）第一条落在 2017-11-18 23:26，宜昌。那三个月是没跑，还是表坏了、送修、没戴？
+        这个只有你记得。</li>
+      <li><b>2014 年 34 次在十堰，2015 年一整年只有 1 次。</b>看年份分布更像「2014 年在十堰，第二年回了宜昌」，
+        不像出差。这条是从地名推的，数据自己证明不了，等你一句话。</li>
+      <li><b>具体哪天几点，页面只到小时这一层。</b>逐条钟点我没往页面上放（放上去就太细了）。
+        你要是想核某几天，把日期给我，我把那几天的时间拉出来对。</li>
+    </ol>
+    <div class="note"><b>已经确认的那一条。</b>时间按本地时间读、那几年就是夜里跑——这条你本人已经认过了，
+      所以我没有再怀疑它，也没有动任何一条原始记录。</div>
+  </section>
+
+  <footer>
+    <span>数据源：GARMIN fēnix 2 导出 · 2014-09-22 至 2017-08-20<br>
+      本页只展示<b>城市级聚合</b>，不含任何一条精确坐标</span>
+    <span>工具：GPS 定城市匹配和频率词云<br>
+      地名反查需外接地图服务 · <b>本文以腾讯地图为例</b><br>
+      调用前需到<b>腾讯位置服务开发者页面</b>注册应用并申请 Key（个人开发者有免费额度）</span>
+    <span>用 WorkBuddy 完成 · 2026 年 10 月</span>
+  </footer>
+
+</div>
+</body>
+</html>
