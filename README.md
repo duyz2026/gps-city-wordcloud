@@ -9,6 +9,10 @@
 <sub>运动手表 · 行车记录 · 照片 EXIF · 任何带坐标的 CSV</sub>
 </p>
 
+<p align="center">
+<b><a href="https://duyz2026.github.io/gps-city-wordcloud/">▶ 在线体验（十年旧表 · 387 条记录，一个真实样本）</a></b>
+</p>
+
 ---
 
 > ## ⚠️ 必须外接地图服务
