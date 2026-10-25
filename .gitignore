@@ -1,0 +1,12 @@
+# 隐私：原始坐标永远不要进仓库
+*.geocode_cache.json
+.geocode_cache.json
+cities.csv
+demo-out.csv
+your-points.csv
+
+# 系统与缓存
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

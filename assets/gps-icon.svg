@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="pin" x1="0.18" y1="0" x2="0.58" y2="1">
+      <stop offset="0" stop-color="#FFD877"/>
+      <stop offset="0.36" stop-color="#F79B2C"/>
+      <stop offset="0.72" stop-color="#E0781A"/>
+      <stop offset="1" stop-color="#C05C0D"/>
+    </linearGradient>
+    <radialGradient id="globe" cx="0.34" cy="0.28" r="0.86">
+      <stop offset="0" stop-color="#FBFDFF"/>
+      <stop offset="0.42" stop-color="#E1EFFC"/>
+      <stop offset="0.82" stop-color="#BBD6EC"/>
+      <stop offset="1" stop-color="#96B9D8"/>
+    </radialGradient>
+    <linearGradient id="letter" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#175B98"/>
+      <stop offset="1" stop-color="#082A55"/>
+    </linearGradient>
+    <clipPath id="globeClip"><circle cx="128" cy="99" r="84"/></clipPath>
+  </defs>
+
+  <ellipse cx="128" cy="249" rx="36" ry="5" fill="#5A2E06" opacity="0.18"/>
+
+  <path d="M128 1
+           C 71.6 1 26 45.6 26 102
+           C 26 140 52 178 94 206
+           C 112 218 124 232 128 242
+           C 132 232 144 218 162 206
+           C 204 178 230 140 230 102
+           C 230 45.6 184.4 1 128 1 Z"
+        fill="url(#pin)" stroke="#8A3F0C" stroke-width="6" stroke-linejoin="round"/>
+
+  <path d="M128 9 C 76 9 34 49 31 100"
+        fill="none" stroke="#FFE9B8" stroke-width="7" opacity="0.5"
+        stroke-linecap="round"/>
+
+  <circle cx="128" cy="99" r="84" fill="url(#globe)" stroke="#0B3D6E" stroke-width="5"/>
+
+  <g clip-path="url(#globeClip)" stroke="#4E82B8" stroke-width="2" fill="none" opacity="0.50">
+    <ellipse cx="128" cy="99" rx="84" ry="28"/>
+    <ellipse cx="128" cy="99" rx="84" ry="57"/>
+    <ellipse cx="128" cy="99" rx="28" ry="84"/>
+    <ellipse cx="128" cy="99" rx="57" ry="84"/>
+    <line x1="44" y1="99" x2="212" y2="99"/>
+  </g>
+  <circle cx="128" cy="99" r="84" fill="none" stroke="#6E9BC4" stroke-width="3" opacity="0.45"/>
+
+  <text x="128" y="95" text-anchor="middle" dominant-baseline="central"
+        font-family="'Arial Black','Segoe UI',Arial,sans-serif" font-weight="900" font-size="124"
+        fill="url(#letter)">G</text>
+</svg>
