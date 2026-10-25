@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GPS 定城市匹配和频率词云 · 工具包下载</title>
+<style>
+  :root{
+    --ink:#16202B; --ink2:#4A5768; --line:#E2E7EE;
+    --navy:#0B3D6E; --orange:#F79B2C; --bg:#F7F8FA; --card:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:660px; margin:0 auto; padding:40px 22px 70px}
+  .tag{
+    display:inline-block; font-size:12.5px; letter-spacing:.08em;
+    color:var(--navy); background:#E8EFF7; border-radius:999px;
+    padding:4px 12px; margin-bottom:18px;
+  }
+  h1{
+    font-size:27px; line-height:1.35; margin:0 0 14px;
+    letter-spacing:-.01em; font-weight:700;
+  }
+  .lead{font-size:16.5px; color:var(--ink2); margin:0 0 28px}
+  .lead b{color:var(--ink)}
+
+  .dl{
+    display:flex; align-items:center; gap:16px;
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:18px 20px; text-decoration:none; color:inherit;
+    box-shadow:0 1px 2px rgba(16,32,52,.04); transition:.15s;
+  }
+  .dl:hover{border-color:#C9D5E4; box-shadow:0 4px 14px rgba(16,32,52,.08)}
+  .dl .ico{
+    flex:0 0 44px; height:44px; border-radius:11px;
+    background:linear-gradient(160deg,#FBB44F,#F08B12);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .dl .ico svg{width:22px; height:22px}
+  .dl .txt{flex:1; min-width:0}
+  .dl .t1{font-weight:650; font-size:16.5px; line-height:1.4}
+  .dl .t2{font-size:13px; color:var(--ink2); margin-top:2px}
+  .dl .go{color:var(--navy); font-size:13px; font-weight:600; white-space:nowrap}
+
+  h2{
+    font-size:15px; margin:38px 0 14px; color:var(--navy);
+    letter-spacing:.02em; font-weight:700;
+  }
+  h2 span{opacity:.5; font-weight:400; margin-left:6px}
+  ol,ul{margin:0; padding-left:22px}
+  ol li,ul li{margin:9px 0; color:var(--ink2)}
+  ol li b,ul li b{color:var(--ink); font-weight:600}
+  code{
+    background:#EEF2F7; padding:1px 6px; border-radius:5px;
+    font-size:13.5px; font-family:ui-monospace,Menlo,Consolas,monospace;
+    color:#1F3A5C;
+  }
+  .note{
+    margin-top:12px; padding:13px 16px; border-left:3px solid var(--orange);
+    background:#FFF8EE; border-radius:0 9px 9px 0;
+    font-size:14px; color:#6B4A16; line-height:1.7;
+  }
+  .faq{margin-top:12px}
+  .faq dt{font-weight:600; margin-top:16px; color:var(--ink); font-size:14.5px}
+  .faq dd{margin:5px 0 0; color:var(--ink2); font-size:14.5px}
+  footer{
+    margin-top:46px; padding-top:20px; border-top:1px solid var(--line);
+    font-size:13px; color:#8894A6; line-height:1.9;
+  }
+  footer a{color:var(--navy); text-decoration:none}
+  footer a:hover{text-decoration:underline}
+  @media (max-width:520px){
+    .wrap{padding:28px 18px 56px}
+    h1{font-size:22.5px}
+    .dl{padding:15px 16px; gap:12px}
+    .dl .go{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="tag">GPS 定城市匹配和频率词云</div>
+
+  <h1>把只有经纬度的记录，<br>补成城市，再做成一张词云</h1>
+
+  <p class="lead">如果你手上有一堆带着坐标、却没有地名的数据——老运动手表、行车记录、照片 EXIF 都算——这套工具就是干这个的。<b>原文件不会被改动</b>，城市名会写进一个新文件。</p>
+
+  <a class="dl" href="gps-tool.zip" download>
+    <span class="ico">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 3v11"/><path d="M7.5 10.5 12 15l4.5-4.5"/><path d="M4 19h16"/>
+      </svg>
+    </span>
+    <span class="txt">
+      <span class="t1">下载工具包</span>
+      <span class="t2">zip 约 18 KB · 脚本 + 示例数据 + 操作手册 · 解压即用</span>
+    </span>
+    <span class="go">下载 →</span>
+  </a>
+
+  <div class="note">
+    只要想看看效果，不用下载：<a href="./" style="color:#8A5A00">点这里直接看做好的一页</a>。
+  </div>
+
+  <h2>三步 <span>不装任何软件，只要有 Python</span></h2>
+  <ol>
+    <li><b>导出数据</b>成 CSV：<code>时间, 纬度, 经度, 距离</code>。少一两列也能跑，坐标必须有。</li>
+    <li><b>申请腾讯地图 Key</b>（免费的额度够跑几千条）：<br>
+      开发者页面登录 → 创建应用 → 添加 Key，<b>必须勾 WebServiceAPI</b>；<br>
+      再去「配额管理 → 账户额度 → <b>一键分配</b>」把额度分给这个 Key。<br>
+      <span style="font-size:13.5px">最后这一步最容易漏，漏了接口会直接报错。</span></li>
+    <li><b>跑脚本，看结果</b>：<code>tools/geocode_tencent.py</code>。跑完会多一个带 <code>city</code> 列的文件，
+      以及一份「判不了」的清单——判不了的会留在清单里，不会硬猜。</li>
+  </ol>
+
+  <h2>包里有什么</h2>
+  <ul>
+    <li><code>GUIDE.md</code>　完整的操作手册：六步主流程、四道验收门、六个常见的坑</li>
+    <li><code>tools/geocode_tencent.py</code>　坐标转城市，含 WGS84→GCJ02 换算和四级置信判定</li>
+    <li><code>examples/points-sample.csv</code>　示例数据，<b>是公开地标，不是你我的真实位置</b></li>
+    <li><code>README.md</code>　五分钟看懂它在干嘛</li>
+  </ul>
+
+  <h2>几个常问的</h2>
+  <dl class="faq">
+    <dt>链接打不开 / 一直转圈？</dt>
+    <dd>这个站托管在 GitHub，国内偶尔抽风。换流量或换 WiFi 试一次，或者隔十几分钟再点。还是不行，就把网址复制到电脑浏览器里开。</dd>
+
+    <dt>我完全不会写代码，能用吗？</dt>
+    <dd>能看懂结果，但不能自己跑——脚本要在命令行里执行。建议先只做第 1 步：把数据导出来存好。数据在自己手里，什么时候都不晚。</dd>
+
+    <dt>我没有经纬度，只有时间和距离？</dt>
+    <dd>那这套用不上。城市名只能从坐标反推出来，没有坐标就无从下手，这不是工具的问题。</dd>
+
+    <dt>能换成高德或百度吗？</dt>
+    <dd>可以，改脚本里的接口地址就行。<b>但坐标系不一样</b>：腾讯、高德是 GCJ-02，百度是 BD-09，天地图是 CGCS2000。换算错了整张图会整体偏移，不会报错——这种错最难发现。</dd>
+
+    <dt>我跑出来的城市怎么比实际少？</dt>
+    <dd>正常。离得远、漂移大、定位丢掉的记录会被判为「判不了」而留在清单里，不会硬塞一个城市名。手册里写了怎么逐条核对。</dd>
+  </dl>
+
+  <footer>
+    许可：MIT（脚本与说明可自由使用、修改、商用）<br>
+    源码与更新：<a href="https://github.com/duyz2026/gps-city-wordcloud">github.com/duyz2026/gps-city-wordcloud</a><br>
+    地名反查依赖外部地图服务，本文以腾讯地图为例；Key 需自行申请，与本工具作者无关。
+  </footer>
+
+</div>
+</body>
+</html>
